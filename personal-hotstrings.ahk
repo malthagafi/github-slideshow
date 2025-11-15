@@ -125,12 +125,6 @@ SendAndTab(text) {
     SendInput {Tab}
 }
 
-RunWithDelay(path, delay := 0) {
-    Run %path%
-    if (delay > 0)
-        Sleep delay
-}
-
 ; =============================================================
 ; Quick Editor Access
 ; =============================================================
@@ -331,11 +325,11 @@ return
 ::incf::#Include C:\AHK\Big Scripts\FindText.ahk
 
 :*:thism::
-    RunWithDelay("C:\\Users\\althagafima\\Desktop\\April 2022.pdf")
+    Run, C:\Users\althagafima\Desktop\April 2022.pdf
 return
 
 :*:0code::
-    RunWithDelay("C:\\AHK\\Big Scripts\\CodeQuickTester-master\\CodeQuickTester.ahk")
+    Run, C:\AHK\Big Scripts\CodeQuickTester-master\CodeQuickTester.ahk
 return
 
 :*:fff::
